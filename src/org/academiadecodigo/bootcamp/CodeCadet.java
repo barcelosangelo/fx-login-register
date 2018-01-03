@@ -15,7 +15,71 @@ public class CodeCadet {
     private Date birthdate;
 
 
+    public CodeCadet(User user,Gender gender,String address,String city,String phone,Bootcamp bootcamp,Date birthdate){
+        this.user = user;
+        this.gender = gender;
+        this.address = address;
+        this.city = city;
+        this.birthdate = birthdate;
+        this.phone = phone;
+        this.bootcamp = bootcamp;
+    }
 
+    public User getUser() {
+        return user;
+    }
 
+    public Gender getGender() {
+        return gender;
+    }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public Bootcamp getBootcamp() {
+        return bootcamp;
+    }
+
+    public Date getBirthdate() {
+        return birthdate;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void setBootcamp(Bootcamp bootcamp) {
+        this.bootcamp = bootcamp;
+    }
+
+    public void setBirthdate(Date birthdate) {
+        this.birthdate = birthdate;
+    }
 }
+
+
