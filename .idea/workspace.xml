@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6438d702-5d71-4221-9d46-1cf1a7fa2153" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -132,8 +132,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="364" />
-    <option name="y" value="23" />
+    <option name="x" value="586" />
+    <option name="y" value="38" />
     <option name="width" value="1654" />
     <option name="height" value="970" />
   </component>
@@ -367,15 +367,15 @@
       <option name="presentableId" value="Default" />
       <updated>1514981890895</updated>
       <workItem from="1514981892131" duration="2199000" />
-      <workItem from="1514990302886" duration="12219000" />
+      <workItem from="1514990302886" duration="12339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14418000" />
+    <option name="totallyTimeSpent" value="14538000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="364" y="23" width="1654" height="970" extended-state="0" />
+    <frame x="586" y="38" width="1654" height="970" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
