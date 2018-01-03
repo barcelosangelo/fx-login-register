@@ -1,4 +1,4 @@
 package org.academiadecodigo.bootcamp.service;
 
-public class MockBootCamService {
+public class MockBootCampService {
 }
