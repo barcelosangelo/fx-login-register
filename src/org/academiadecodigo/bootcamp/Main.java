@@ -1,0 +1,66 @@
+package org.academiadecodigo.bootcamp;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import org.academiadecodigo.bootcamp.controller.LoginController;
+import org.academiadecodigo.bootcamp.service.MockUserService;
+import org.academiadecodigo.bootcamp.model.User;
+import org.academiadecodigo.bootcamp.service.UserService;
+import org.academiadecodigo.bootcamp.utils.Security;
+
+import java.io.IOException;
+
+public class Main extends Application {
+
+    private FXMLLoader fxmlLoader;
+
+    private Parent root;
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+    /*@Override
+    public void init() {
+
+        try {
+
+            // Instantiate the view and associated controller
+            fxmlLoader = new FXMLLoader(getClass().getResource("/org/academiadecodigo/bootcamp/view/login.fxml"));
+            root = fxmlLoader.load();
+
+            // Add a test user
+            UserService userService = new MockUserService();
+            userService.addUser(new User("Rui Ferrao", "rui.ferrao@academiadecodigo", Security.getHash("codigoergosum")));
+
+            // Wire the controller to the service
+            LoginController loginController = fxmlLoader.getController();
+            loginController.setUserService(userService);
+
+        } catch (IOException e) {
+            System.out.println("Unable to load view: " + e.getMessage());
+            System.exit(1);
+        }
+
+    }*/
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+
+        Navigation.getInstance().setStage(primaryStage);
+        Navigation.getInstance().loadScreen("login");
+
+        UserService userService = new MockUserService();
+        LoginController loginController =(LoginController)Navigation.getInstance().getController("login");
+        loginController.setUserService(userService);
+
+
+
+
+    }
+
+}
+
