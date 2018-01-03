@@ -1,6 +1,6 @@
-package org.academiadecodigo.bootcamp;
+package org.academiadecodigo.bootcamp.model;
 
-import org.academiadecodigo.bootcamp.model.User;
+import org.academiadecodigo.bootcamp.utils.Gender;
 
 import java.util.Date;
 
