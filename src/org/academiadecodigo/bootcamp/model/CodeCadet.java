@@ -95,6 +95,19 @@ public class CodeCadet {
     public int hashCode() {
         return user.hashCode();
     }
+
+    @Override
+    public String toString() {
+        return "CodeCadet{" +
+                "user=" + user +
+                ", gender=" + gender +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", phone='" + phone + '\'' +
+                ", bootcamp=" + bootcamp +
+                ", birthdate=" + birthdate +
+                '}';
+    }
 }
 
 

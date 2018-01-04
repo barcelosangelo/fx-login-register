@@ -36,7 +36,7 @@ public class MockBootCampService implements BootCampService{
     public void addCodeCadet(CodeCadet codeCadet, int id) {
         Bootcamp bootcamp = (bootcamps.get(id));
         bootcamp.addCadet(codeCadet);
-        }
+    }
 
 
 
