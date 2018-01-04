@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp;
+package org.academiadecodigo.bootcamp.utils;
 
 public enum Gender {
 
