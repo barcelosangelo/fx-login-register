@@ -23,6 +23,7 @@ public class Bootcamp {
     }
 
     public void addCadet(CodeCadet codeCadet){
+
         codecadets.add(codeCadet);
     }
 
@@ -59,5 +60,14 @@ public class Bootcamp {
         this.codecadets = codecadets;
     }
 
+    public Set<CodeCadet> getCodecadets() {
+        return codecadets;
+    }
 
+    @Override
+    public String toString() {
+        return "Bootcamp{" +
+                "id=" + id +
+                '}';
+    }
 }

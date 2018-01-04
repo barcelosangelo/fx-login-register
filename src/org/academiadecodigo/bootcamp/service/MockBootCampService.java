@@ -34,7 +34,11 @@ public class MockBootCampService implements BootCampService{
 
     @Override
     public void addCodeCadet(CodeCadet codeCadet, int id) {
+
         Bootcamp bootcamp = (bootcamps.get(id));
+        if(bootcamp.getCodecadets().contains(codeCadet)){
+            return;
+        }
         bootcamp.addCadet(codeCadet);
     }
 
