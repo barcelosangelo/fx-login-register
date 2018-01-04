@@ -80,6 +80,21 @@ public class CodeCadet {
     public void setBirthdate(Date birthdate) {
         this.birthdate = birthdate;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        CodeCadet codeCadet = (CodeCadet) o;
+
+        return user.equals(codeCadet.user);
+    }
+
+    @Override
+    public int hashCode() {
+        return user.hashCode();
+    }
 }
 
 

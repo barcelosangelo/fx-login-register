@@ -11,7 +11,9 @@ public interface BootCampService {
 
     void addCodeCadet(CodeCadet codeCadet);
 
-    void finCodeCadet(CodeCadet codeCadet);
+    void findCodeCadet(CodeCadet codeCadet);
+
+
 
 
 }

@@ -16,6 +16,7 @@ public class Bootcamp {
     private Set<CodeCadet> codecadet = new HashSet<CodeCadet>();
 
 
+
     public Bootcamp(int id, String location, Date startDate, Date endDate) {
         this.id = id;
         this.location = location;
@@ -23,5 +24,37 @@ public class Bootcamp {
         this.endDate = endDate;
     }
 
+    public int getId() {
+        return id;
+    }
+
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
+
+    public void setCodecadet(Set<CodeCadet> codecadet) {
+        this.codecadet = codecadet;
+    }
 
 }
