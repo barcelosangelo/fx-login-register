@@ -9,7 +9,7 @@ public interface BootCampService {
 
     void addBootcamp(Bootcamp bootcamp);
 
-    void addCodeCadet(CodeCadet codeCadet);
+    void addCodeCadet(CodeCadet codeCadet, int id);
 
     void findCodeCadet(CodeCadet codeCadet);
 

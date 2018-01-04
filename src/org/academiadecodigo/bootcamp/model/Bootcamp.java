@@ -1,8 +1,6 @@
 package org.academiadecodigo.bootcamp.model;
 
 
-import org.academiadecodigo.bootcamp.model.CodeCadet;
-
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -13,7 +11,7 @@ public class Bootcamp {
     private String location;
     private Date startDate;
     private Date endDate;
-    private Set<CodeCadet> codecadet = new HashSet<CodeCadet>();
+    private Set<CodeCadet> codecadets = new HashSet<CodeCadet>();
 
 
 
@@ -22,6 +20,10 @@ public class Bootcamp {
         this.location = location;
         this.startDate = startDate;
         this.endDate = endDate;
+    }
+
+    public void addCadet(CodeCadet codeCadet){
+        codecadets.add(codeCadet);
     }
 
     public int getId() {
@@ -53,8 +55,8 @@ public class Bootcamp {
         this.endDate = endDate;
     }
 
-    public void setCodecadet(Set<CodeCadet> codecadet) {
-        this.codecadet = codecadet;
+    public void setCodecadets(Set<CodeCadet> codecadets) {
+        this.codecadets = codecadets;
     }
 
 }
