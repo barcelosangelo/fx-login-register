@@ -70,4 +70,19 @@ public class Bootcamp {
                 "id=" + id +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Bootcamp bootcamp = (Bootcamp) o;
+
+        return id == bootcamp.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return id;
+    }
 }

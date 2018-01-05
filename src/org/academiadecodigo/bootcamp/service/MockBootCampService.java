@@ -52,10 +52,17 @@ public class MockBootCampService implements BootCampService{
 
     }
 
+    public Map<Integer, Bootcamp> getBootcamps() {
+        return bootcamps;
+    }
+
     @Override
     public void listBootCamps(Bootcamp bootcamp) {
+        getBootcamps();
+        return;
 
     }
+
 
 
 }

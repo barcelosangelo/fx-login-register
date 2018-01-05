@@ -3,6 +3,7 @@ package org.academiadecodigo.bootcamp;
 import org.academiadecodigo.bootcamp.model.Bootcamp;
 import org.academiadecodigo.bootcamp.model.CodeCadet;
 import org.academiadecodigo.bootcamp.model.User;
+import org.academiadecodigo.bootcamp.service.MockBootCampService;
 import org.academiadecodigo.bootcamp.utils.Gender;
 
 import java.util.Date;
@@ -26,6 +27,14 @@ public class Main2 {
         bootcamp.addCadet(codeCadet2);
         bootcamp.addCadet(codeCadet);
         bootcamp1.addCadet(codeCadet1);
+
+        MockBootCampService mc = new MockBootCampService();
+        mc.addBootCamp(bootcamp);
+        mc.addBootCamp(bootcamp1);
+        mc.addBootCamp(bootcamp2);
+
+        System.out.println(mc.getBootcamps());
+
 
        //System.out.println("test" + bootcamp.getCodecadets());
 
