@@ -13,6 +13,8 @@ public interface BootCampService {
 
     void findCodeCadet(CodeCadet codeCadet);
 
+    void listBootCamps(Bootcamp bootcamp);
+
 
 
 

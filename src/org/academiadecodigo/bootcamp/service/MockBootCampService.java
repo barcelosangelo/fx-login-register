@@ -26,7 +26,9 @@ public class MockBootCampService implements BootCampService{
     public void addBootcamp(Bootcamp bootcamp) {
         if(!bootcamps.containsKey(bootcamp.getId())){
             bootcamps.put(bootcamp.getId(),bootcamp);
+
         }
+        return;
 
     }
 
@@ -47,6 +49,11 @@ public class MockBootCampService implements BootCampService{
 
     @Override
     public void findCodeCadet(CodeCadet codeCadet) {
+
+    }
+
+    @Override
+    public void listBootCamps(Bootcamp bootcamp) {
 
     }
 
