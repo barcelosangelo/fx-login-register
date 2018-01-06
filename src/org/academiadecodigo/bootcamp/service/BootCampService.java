@@ -7,11 +7,13 @@ public interface BootCampService {
 
     Bootcamp findById(int id);
 
-    void addBootcamp(Bootcamp bootcamp);
+    void addBootCamp(Bootcamp bootcamp);
 
     void addCodeCadet(CodeCadet codeCadet, int id);
 
     void findCodeCadet(CodeCadet codeCadet);
+
+    void listBootCamps(Bootcamp bootcamp);
 
 
 

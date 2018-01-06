@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6438d702-5d71-4221-9d46-1cf1a7fa2153" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/controller/Page2Controller.java" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/fx-login-register/org/academiadecodigo/bootcamp/Main.class" afterPath="$PROJECT_DIR$/out/production/fx-login-register/org/academiadecodigo/bootcamp/Main.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/fx-login-register/org/academiadecodigo/bootcamp/Navigation.class" afterPath="$PROJECT_DIR$/out/production/fx-login-register/org/academiadecodigo/bootcamp/Navigation.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/fx-login-register/org/academiadecodigo/bootcamp/view/AcademiaCodigo.fxml" afterPath="$PROJECT_DIR$/out/production/fx-login-register/org/academiadecodigo/bootcamp/view/AcademiaCodigo.fxml" />
+      <change beforePath="$PROJECT_DIR$/out/production/fx-login-register/org/academiadecodigo/bootcamp/view/login.fxml" afterPath="$PROJECT_DIR$/out/production/fx-login-register/org/academiadecodigo/bootcamp/view/login.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Main2.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Main2.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Navigation.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Navigation.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/model/Bootcamp.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/model/Bootcamp.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/service/BootCampService.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/service/BootCampService.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/service/MockBootCampService.java" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/service/MockBootCampService.java" />
+      <change beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/view/AcademiaCodigo.fxml" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/view/AcademiaCodigo.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/view/login.fxml" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/view/login.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +70,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="259">
               <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
@@ -378,16 +391,15 @@
       <workItem from="1515076834503" duration="11123000" />
       <workItem from="1515102729720" duration="598000" />
       <workItem from="1515192395233" duration="383000" />
-      <workItem from="1515272376210" duration="17000" />
+      <workItem from="1515272376210" duration="245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39511000" />
+    <option name="totallyTimeSpent" value="39739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="116" y="45" width="1654" height="970" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -397,9 +409,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27577937" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27577937" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17485714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17386091" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1468005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -697,10 +709,10 @@
             <element signature="imports" expanded="false" />
             <element signature="e#486#493#0" expanded="false" />
             <element signature="e#1115#1127#0" expanded="false" />
-            <element signature="e#1701#1702#0" expanded="false" />
-            <element signature="e#1735#1736#0" expanded="false" />
-            <element signature="e#1786#1787#0" expanded="false" />
-            <element signature="e#1829#1830#0" expanded="false" />
+            <element signature="e#1734#1735#0" expanded="false" />
+            <element signature="e#1768#1769#0" expanded="false" />
+            <element signature="e#1819#1820#0" expanded="false" />
+            <element signature="e#1862#1863#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -821,10 +833,10 @@
             <element signature="imports" expanded="false" />
             <element signature="e#486#493#0" expanded="false" />
             <element signature="e#1115#1127#0" expanded="false" />
-            <element signature="e#1701#1702#0" expanded="false" />
-            <element signature="e#1735#1736#0" expanded="false" />
-            <element signature="e#1786#1787#0" expanded="false" />
-            <element signature="e#1829#1830#0" expanded="false" />
+            <element signature="e#1734#1735#0" expanded="false" />
+            <element signature="e#1768#1769#0" expanded="false" />
+            <element signature="e#1819#1820#0" expanded="false" />
+            <element signature="e#1862#1863#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -927,7 +939,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/bootcamp/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="259">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
