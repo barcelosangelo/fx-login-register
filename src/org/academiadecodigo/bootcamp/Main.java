@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.academiadecodigo.bootcamp.controller.LoginController;
+import org.academiadecodigo.bootcamp.service.JdbcUserService;
 import org.academiadecodigo.bootcamp.service.MockUserService;
 import org.academiadecodigo.bootcamp.model.User;
 import org.academiadecodigo.bootcamp.service.UserService;
@@ -53,7 +54,7 @@ public class Main extends Application {
         Navigation.getInstance().setStage(primaryStage);
         Navigation.getInstance().loadScreen("login");
 
-        UserService userService = new MockUserService();
+        UserService userService = new JdbcUserService();
         LoginController loginController =(LoginController)Navigation.getInstance().getController("login");
         loginController.setUserService(userService);
 

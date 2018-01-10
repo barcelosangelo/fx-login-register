@@ -3,11 +3,9 @@ package org.academiadecodigo.bootcamp.service;
 import javafx.stage.Stage;
 import org.academiadecodigo.bootcamp.model.User;
 import org.academiadecodigo.bootcamp.persistence.ConnectionManager;
+import org.academiadecodigo.bootcamp.utils.Security;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class JdbcUserService implements UserService{
 
@@ -16,6 +14,29 @@ public class JdbcUserService implements UserService{
 
     @Override
     public boolean authenticate(String username, String password) {
+        try {
+           // Statement statement = dbConnection.createStatement();
+
+            String query = "SELECT user_name, password FROM users WHERE user_name =? AND password =?";
+
+            PreparedStatement statement = dbConnection.prepareStatement(query);
+
+            statement.setString(1,username);
+            statement.setString(2, Security.getHash(password));
+
+
+            ResultSet resultSet = statement.executeQuery();
+
+            if(resultSet.next()){
+                return true;
+            }
+
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
         return false;
     }
 
@@ -29,11 +50,7 @@ public class JdbcUserService implements UserService{
             String query = "INSERT INTO users (user_name, password, email) VALUES ('"+user.getUsername()+"','"+user.getPassword()+"','"+user.getPassword()+"');";
 
 
-                    statement.executeUpdate(query);
-
-
-
-
+            statement.executeUpdate(query);
 
         } catch (SQLException e) {
             e.printStackTrace();
