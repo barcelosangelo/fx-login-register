@@ -5,21 +5,28 @@ import org.academiadecodigo.bootcamp.model.User;
 import org.academiadecodigo.bootcamp.persistence.ConnectionManager;
 import org.academiadecodigo.bootcamp.utils.Security;
 
+
 import java.sql.*;
 
 public class JdbcUserService implements UserService{
 
-    private ConnectionManager connectionManager = new ConnectionManager();
-    Connection dbConnection = connectionManager.getConnection();
+
+    private ConnectionManager connectionManager;
+
+
+    public JdbcUserService (ConnectionManager connectionManager){
+        this.connectionManager = connectionManager;
+    }
+
 
     @Override
     public boolean authenticate(String username, String password) {
         try {
-           // Statement statement = dbConnection.createStatement();
+
 
             String query = "SELECT user_name, password FROM users WHERE user_name =? AND password =?";
 
-            PreparedStatement statement = dbConnection.prepareStatement(query);
+            PreparedStatement statement = connectionManager.getConnection().prepareStatement(query);
 
             statement.setString(1,username);
             statement.setString(2, Security.getHash(password));
@@ -29,6 +36,9 @@ public class JdbcUserService implements UserService{
 
             if(resultSet.next()){
                 return true;
+            }
+            if (statement != null){
+                statement.close();
             }
 
 
@@ -42,19 +52,28 @@ public class JdbcUserService implements UserService{
 
     @Override
     public void addUser(User user) {
-        Statement statement = null;
+
 
         try {
-            statement = dbConnection.createStatement();
 
-            String query = "INSERT INTO users (user_name, password, email) VALUES ('"+user.getUsername()+"','"+user.getPassword()+"','"+user.getPassword()+"');";
+            String query = "INSERT INTO users (user_name, password, email) VALUES (?,?,?)";
+            PreparedStatement statement = connectionManager.getConnection().prepareStatement(query);
+            statement.setString(1,user.getUsername());
+            statement.setString(2,user.getPassword());
+            statement.setString(3,user.getEmail());
 
 
-            statement.executeUpdate(query);
+
+            statement.executeUpdate();
+
+            if (statement != null){
+                statement.close();
+            }
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
 
     }
 
@@ -63,7 +82,7 @@ public class JdbcUserService implements UserService{
         User user = null;
         try {
 
-        Statement statement = dbConnection.createStatement();
+        Statement statement = connectionManager.getConnection().createStatement();
         String query = "SELECT * FROM users WHERE user_name = " + "\"" + username + "\";";
         ResultSet resultSet = null;
 
@@ -96,7 +115,7 @@ public class JdbcUserService implements UserService{
         try {
             Statement statement = null;
 
-            statement = dbConnection.createStatement();
+            statement = connectionManager.getConnection().createStatement();
 
 
             String query = "SELECT COUNT(*) FROM users";
