@@ -26,7 +26,7 @@ public class JdbcUserService implements UserService{
         try {
             statement = dbConnection.createStatement();
 
-            String query = "INSERT INTO users (user_name, password, email) VALUES ("user.getUsername()+
+            String query = "INSERT INTO users (user_name, password, email) VALUES ('"+user.getUsername()+"','"+user.getPassword()+"','"+user.getPassword()+"');";
 
 
                     statement.executeUpdate(query);
